@@ -13,7 +13,8 @@ O repositório contém os seguintes diretórios e arquivos:
     css/: Diretório contendo arquivos CSS para estilização do site.
     img/: Diretório contendo imagens usadas no site.
     js/: Diretório contendo arquivos JavaScript para interatividade do site.
-    includes/: Diretório contendo arquivos PHP que são incluídos em várias páginas do site, como cabeçalho, rodapé e menu de navegação.
+    includes/: Diretório contendo arquivos PHP que são incluídos em várias páginas do site, 
+    como cabeçalho, rodapé e menu de navegação.
     postagem.php: Página para criação de postagens para o site.
     db/: Diretório contendo arquivo de configuração para conexão com o banco de dados MySQL.
     sql/: Diretório contendo arquivo SQL para criar a estrutura do banco de dados.
