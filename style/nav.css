@@ -1,0 +1,214 @@
+:root{
+    --color-p: #009067;
+}
+
+nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 15vh;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-p);
+    color: white;
+    font-size: 18px;
+    z-index: 999;
+    background-color: #00906765;
+}
+
+/* nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 15vh;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-p);
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+} */
+
+nav div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav div:nth-child(2){
+    margin-right: 20px;
+}
+nav div:nth-child(1){
+    margin-left: 40px;
+}
+nav div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+nav div a::after{
+    content: " ";
+    height: 2px;
+    width: 0px;
+    background-color: var(--color-p);
+}
+
+nav div a:hover::after{
+    animation: btn .5s ease-in;
+    width: 100%;
+    transform-origin: left;
+}
+
+@keyframes btn {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
+.asideB{
+    display: none;
+    flex-direction: row;
+    height: 100vh;
+    position: fixed;
+    left: -300px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+
+#btn2{
+    height: 100%;
+    width: calc(100vw - 300px);
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    backdrop-filter: blur(15px);
+    background-color:  rgba(0, 0, 0, 0.397);
+    border-right: #009067 solid 1px;
+}
+
+aside ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.fechar{
+    animation: fechar .7s ease-in-out;
+    left: -300px;
+    top: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.abrir{
+    animation: abrir .7s ease-in-out;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    z-index: 1000;
+}
+
+nav div button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    background-image: url(../imgs/cardapio.png);
+    background-position: center;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+@keyframes abrir {
+    0%{
+        left: -300px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+@keyframes  fechar{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: -300px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    nav{
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav div a{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px){
+    nav div button{
+        display: none;
+    }
+}

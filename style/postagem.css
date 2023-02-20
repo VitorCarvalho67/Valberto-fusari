@@ -1,0 +1,116 @@
+@import url(config.css);
+@import url(nav.css);
+@import url(footer.css);
+
+:root{
+    --font-p:'Roboto', sans-serif;
+    --color-p: #009067;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.015);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    height: 70vh;
+    width: 100%;
+    background-image: url(../imgs/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.pesquisa{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-p);
+}
+
+.pesquisa input {
+    height: 25px;
+    width: 200px;
+    margin-left: 10px;
+    font-family: var(--font-p);
+    padding-left: 5px;
+    border: var(--color-p) solid 2px;
+    border-radius: 2px;
+    
+}
+
+.nomes{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.eventos{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid var(--color-p);
+    border-radius: 10px;
+    width: 50%;
+    font-family: var(--font-p);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.eventos h2{
+    color: var(--color-p);
+}
+
+.eventos p{
+    margin-top: 10px;
+}
+
+.img-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.eventos img{
+    max-width: 700px;
+    max-height: 400px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    main{
+        height: 40vh;
+    }
+    
+    .eventos{
+        width: 80%;
+    }
+}

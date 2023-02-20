@@ -1,0 +1,48 @@
+@import url(config.css);
+
+footer{
+    background-color: rgba(0, 0, 0, 0.755);
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    padding: 20px;
+    font-family: var(--font-p);
+}
+footer .logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .sobre {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h4{
+    color: var(--color-p);
+}
+
+footer p{
+    font-size: 10px;
+}
+
+@media screen and (max-width: 500px){
+    footer{
+        flex-direction: column;
+        height: auto;
+    }
+    
+    footer .logo, footer .sobre{
+        width: 100%;
+    }
+
+}

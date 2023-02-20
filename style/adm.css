@@ -1,0 +1,81 @@
+@import url(config.css);
+@import url(nav.css);
+@import url(footer.css);
+
+:root{
+    --font-p:'Roboto', sans-serif;
+    --color-p: #009067;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.774);
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imgs/adm.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: solid 2px var(--color-p);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-family: var(--font-p);
+}
+
+ #data, #texto, #nome{
+    padding: 3px;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+form input, form label{
+    width: 400px;
+    margin: 2.5px;
+    font-family: var(--font-p);
+}
+
+#texto{
+    scroll-behavior: none;
+    height: 150px;
+    width: 400px;
+}
+
+#submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--color-p);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--color-p);
+}
+
+#imagem{
+    color: white;
+    background-color: var(--color-p);
+    padding: 5px;
+    border-radius: 5px;
+}
+#submit:hover{
+    
+}

@@ -1,0 +1,113 @@
+@import url(config.css);
+@import url(nav.css);
+@import url(footer.css);
+
+:root{
+    --font-p:'Roboto', sans-serif;
+    --color-p: #009067;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.015);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imgs/img-login.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+main .l-img{
+    width: 50%;
+    height: 100%;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(40px);
+}
+
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 50%;
+    width: 70%;
+    border: var(--color-p) 2px solid;
+}
+
+legend{
+    margin-left: 10%;
+    font-family: var(--font-p);
+    font-size: 25px;
+    padding: 5px;
+    color: var(--color-p);
+    
+}
+
+fieldset div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset div label{
+    font-family: var(--font-p);
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+fieldset div input{
+    height: 25px;
+    width: 70%;
+    font-family: var(--font-p);
+    padding-left: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px black;
+    outline: none;
+}
+
+.btn{
+    width: 80%;
+    padding: 5px;
+    background-color: var(--color-p);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    main .l-img{
+        display: none;
+    }
+    main form{
+        width: 100vw;
+        backdrop-filter: blur(0px);
+    }
+    fieldset{
+        backdrop-filter: blur(10px);
+    }
+}
