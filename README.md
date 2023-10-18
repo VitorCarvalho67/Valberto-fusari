@@ -1,6 +1,5 @@
 ﻿# Valberto-fusari
 
-## Technology
 <img src="https://github.com/VitorCarvalho67/Valberto-fusari/assets/102667323/2f380d33-af2f-4d61-9ae1-0623d80f4fb6"/>
 ﻿
  # Link: https://valbertovusari.000webhostapp.com/
