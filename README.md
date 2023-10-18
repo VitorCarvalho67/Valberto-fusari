@@ -1,6 +1,10 @@
 ﻿# Valberto-fusari
 
-﻿#Link: https://valbertovusari.000webhostapp.com/
+## Technology
+  <div class="container">
+    <img src="https://github.com/VitorCarvalho67/Valberto-fusari/assets/102667323/2f380d33-af2f-4d61-9ae1-0623d80f4fb6" width="45" height="45" />
+  </div>
+﻿# Link: https://valbertovusari.000webhostapp.com/
 
 "Valberto-fusari" é um projeto de site desenvolvido em PHP para a Escola Valberto Fusari. O objetivo do site é fornecer uma plataforma para exibir informações sobre a escola e compartilhar notícias e eventos relevantes.
 
